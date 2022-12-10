@@ -11,10 +11,18 @@
 6. Om tärningarna visar olika siffror blir bruttovinsten 0 kr. */
 
 int tarningsvarde(){
-    //SKALL RETUNERA ETT TAL MELLA 1 OCH 6 
+    //SKALL RETUNERA ETT TAL MELLA 1 OCH 6  
+    srand(unsigned(time(nullptr)));
+    int t1= rand() % 6;
+    int t2= rand() % 6;
+    int t3= rand() % 6;
 }
 int bruttovinst(int t1, int t2, int t3){
-    //HUR VINSTEN SKALL BERÄKNAS T.EX SKA 6,6,6 RETUNERA 100 
+    //HUR VINSTEN SKALL BERÄKNAS T.EX SKA 6,6,6 RETUNERA 100
+    if (t1 == t2 == t3 ){
+        return 100;
+    }
+    else if()
 }
 bool boolFranUppmaning(const char uppmaning[]){
     //SKRIVA UPPMANING PÅ SKÄRMEN OCH LÄSA IN JA ELLER NEJ.
@@ -35,4 +43,8 @@ void spelaTarningsSpelet(){
             cout << "Fegis!!" << endl;
         }
     }
+}
+
+int main(){
+    tarningsvarde(); 
 }
